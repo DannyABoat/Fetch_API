@@ -5,7 +5,7 @@ import "./App.css"
 
 const App = () => {
   const [fact, setFact] = useState({})
-  const [data, setData] = useState({})
+  const [ setData ] = useState({})
 
   // equivalent to componentDidMount
   useEffect(() => {
@@ -30,7 +30,7 @@ const App = () => {
   }
 
   return (
-    <div>
+    <div className= "main">
       <h1>Hello API's!</h1>
       <button onClick={handleFetch}>Run the fetch request!</button>
       <button onClick={() => setData("hi")}>Add data</button>
